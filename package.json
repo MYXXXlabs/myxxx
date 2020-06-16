@@ -1,0 +1,12 @@
+{
+  "name": "myxxx",
+  "version": "1.0.0",
+  "icon": "myxxx.png",
+  "description": "A lightweight HTML WYSIWYG compiler",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "MYXXX labs",
+  "license": "Apache-2.0"
+}

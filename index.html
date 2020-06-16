@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Less.js -->
+    <link rel="stylesheet/less" type="text/css" href="less/main.less" />
+    <script src="js/less/less.min.js"></script>
+    <title>MYXXX</title>
+</head>
+<body>
+    <div id="container">
+        <div id="wysiwyg">
+            <div id="editor"></div>
+            <iframe id="iframe"></iframe>
+        </div>
+    </div>
+    <!-- Ace.js -->
+    <script src="ace-builds/src/ace.js"></script>
+    <script src="js/src/editor.js"></script>
+    <script>
+        function compile() {
+            let output = document.getElementById("iframe").contentWindow.document;
+            document.body.onkeyup = function() {
+                let code = editor.getValue();
+                output.open();
+                output.writeln(code);
+                output.close();
+            }
+        }
+        compile();
+    </script>
+</body>
+</html>
