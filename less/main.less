@@ -7,16 +7,52 @@ body, html {
     font-family: 'Source Code Pro';
 }
 #wysiwyg {
+    margin-top: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     #editor {
-        height: 95vh;
+        height: 96vh;
         width: 50vw;
         font-size: 16px;
     }
     #iframe {
-        width: 49.3vw;
+        width: 50vw;
         border: 0;
-        height: 94.2vh;
+        height: 96vh;
     }
 }
+.noselect {
+    user-select: none;
+    -webkit-user-select: none;
+}
+.drag {
+    -webkit-app-region: drag;
+}
+iframe {
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border: 2px transparent;
+    border-radius: 5px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border: 2px transparent;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

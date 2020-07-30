@@ -5,11 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Less.js -->
     <link rel="stylesheet/less" type="text/css" href="less/main.less" />
+    <link rel="stylesheet/less" type="text/css" href="less/titlebar.less" />
+    <!-- Other stuff (favicons lol) -->
+    <link rel="icon" type="image/png" href="myxxx.png">
     <script src="js/less/less.min.js"></script>
     <title>MYXXX</title>
 </head>
 <body>
     <div id="container">
+        <div id="titlebar">
+            <div id="title" class="drag">
+                <span class="noselect">MYXXX</span>
+            </div>
+            <div id="wincontrols" class="noselect">
+                <button onclick="minimise()">_</button>
+                <button onclick="maximise()">[]</button>
+                <button onclick="quit()" id="close">X</button>
+            </div>
+        </div>
         <div id="wysiwyg">
             <div id="editor"></div>
             <iframe id="iframe"></iframe>
@@ -17,11 +30,15 @@
     </div>
     <!-- Ace.js -->
     <script src="ace-builds/src/ace.js"></script>
+    <script src="ace-builds/src/ext-emmet.js"></script>
     <script src="js/src/editor.js"></script>
+    <script src="js/emmet-core/emmet.js"></script>
+    <!-- Other scripts -->
+    <script src="js/src/titlebar.js"></script>
     <script>
         function compile() {
             let output = document.getElementById("iframe").contentWindow.document;
-            document.body.onkeyup = function() {
+            document.body.onkeyup = function () {
                 let code = editor.getValue();
                 output.open();
                 output.writeln(code);

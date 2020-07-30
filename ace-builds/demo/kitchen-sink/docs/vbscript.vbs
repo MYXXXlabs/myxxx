@@ -1,4 +1,4 @@
-myfilename = "C:\Wikipedia - VBScript - Example - Hello World.txt"
+myfilename = "C:\Users\bikki\Documents\Wikipedia - VBScript - Example - Hello World.txt"
 MakeHelloWorldFile myfilename
  
 Sub MakeHelloWorldFile (FileName)

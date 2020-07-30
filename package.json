@@ -1,12 +1,25 @@
 {
   "name": "myxxx",
   "version": "1.0.0",
-  "icon": "myxxx.png",
-  "description": "A lightweight HTML WYSIWYG compiler",
-  "main": "main.js",
+  "description": "A simple, lightweight live HTML editor.",
+  "main": "./main.js",
   "scripts": {
     "start": "electron ."
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myxxxlabs/myxxx.git"
+  },
+  "keywords": [
+    "HTML",
+    "WYSIWYG",
+    "live",
+    "editor"
+  ],
   "author": "MYXXX labs",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/myxxxlabs/myxxx/issues"
+  },
+  "homepage": "https://github.com/myxxxlabs/myxxx#readme"
 }

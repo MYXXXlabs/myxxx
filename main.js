@@ -8,15 +8,16 @@ function createWindow () {
     minWidth: 700,
     minHeight: 500,
     frame: false,
-    icon: "myxxx.png",
+    icon: "./myxxx.png",
     webPreferences: {
-      nodeIntegration: true
+      nodeIntegration: true,
+      enableRemoteModule: true
     }
   })
   
 
   // and load the index.html of the app.
-  win.loadFile('index.html')
+  win.loadFile('./index.html')
 
   // Open the DevTools.
   // win.webContents.openDevTools()

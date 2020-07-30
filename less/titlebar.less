@@ -1,0 +1,31 @@
+#titlebar {
+  height: 4vh;
+  background: #1c1c1c;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+#title {
+  font-size: 3vh;
+  color: white;
+  display: inline-block;
+  margin-left: 2px;
+}
+#wincontrols {
+  display: grid;
+  float: right;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#wincontrols button {
+  color: white;
+  outline: none;
+  border: none;
+  background: transparent;
+  transition: all 0.2s ease;
+  font-size: 3vh;
+}
+#wincontrols button#close:hover {
+  background: coral;
+}
+#wincontrols button:hover {
+  background: #484a4c;
+}
