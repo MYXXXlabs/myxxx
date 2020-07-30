@@ -1,0 +1,4 @@
+# Ignore WebStorm files
+.idea/*
+# Ignore ace
+ace-builds/*
